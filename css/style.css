@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 90px;
+}
+ul li {
+    list-style: none;
+}
+li:first-child{
+    color:aqua;
+    font-size: 40px;
+
+}
+li:last-child {
+    color: brown;
+    font-size: 40px;
+
+}
+li:nth-child(3) {
+    color: blue;
+    font-size: 50px;
+}
+li:nth-child(1n) {
+    color:chartreuse;
+}
+li:nth-child(odd) {
+    color: black;
+}
+li:nth-child(even) {
+    color: deeppink;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color:chartreuse;
+}
+h1:hover {
+    color: blue;
+    text-transform: capitalize;
+}
+input:focus {
+    border: 3px solid pink;
+    width: 250px;
+    height: 45px;
+    outline: none;
+}
+input:focus:hover {
+    border: 3px crimson;
+}
+.link, .link2  {
+    font-size: 35px;
+
+}
+.link:visited {
+    color: green;
+}
+.link:active {
+    color: midnightblue;
+}
+p::first-letter {
+    font-size: 70px;
+    color: blanchedalmond;
+
+
+}
+p::selection{
+    background-color: blue;
+    color: chartreuse;
+}
+
+LI::after {
+    content: "14";
+}
+LI::before {
+    content: "14";
+.name {
+    width: 100px;
+    margin: 0 auto;
+}
+}
+.name::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    display: block;
+    background-color: black;
+    transform: scale(0);
+    transition: o,3s;
+}
+.name:hover::after {
+    transform: scale(1);
+}
